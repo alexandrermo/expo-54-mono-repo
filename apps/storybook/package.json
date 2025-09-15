@@ -1,0 +1,59 @@
+{
+  "name": "preview",
+  "version": "1.0.0",
+  "main": "./AppEntry.js",
+  "license": "MIT",
+  "scripts": {
+    "web": "storybook dev -p 6006"
+  },
+  "dependencies": {
+    "expo": "catalog:expo",
+    "expo-constants": "catalog:expo",
+    "expo-status-bar": "catalog:expo",
+    "react": "catalog:ui",
+    "react-docgen-typescript": "catalog:build",
+    "react-dom": "catalog:ui",
+    "react-native": "catalog:ui",
+    "react-native-gesture-handler": "catalog:ui",
+    "react-native-reanimated": "catalog:ui",
+    "react-native-safe-area-context": "catalog:ui",
+    "react-native-web": "catalog:ui",
+    "react-native-worklets": "catalog:ui"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-export-namespace-from": "catalog:build",
+    "@babel/preset-env": "catalog:build",
+    "@chromatic-com/storybook": "catalog:storybook",
+    "@storybook/addon-docs": "catalog:storybook",
+    "@storybook/addon-links": "catalog:storybook",
+    "@storybook/addon-ondevice-actions": "catalog:storybook",
+    "@storybook/addon-ondevice-backgrounds": "catalog:storybook",
+    "@storybook/addon-ondevice-controls": "catalog:storybook",
+    "@storybook/addon-ondevice-notes": "catalog:storybook",
+    "@storybook/react-native": "catalog:storybook",
+    "@storybook/react-native-web-vite": "catalog:storybook",
+    "storybook": "catalog:storybook",
+    "typescript": "catalog:dev",
+    "vite": "catalog:build"
+  },
+  "resolutions": {
+    "react-native-web": "^0.21.1"
+  },
+  "overrides": {
+    "react-native-web": "^0.21.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "react-native-web": "^0.21.1"
+    }
+  },
+  "private": true,
+  "expo": {
+    "autolinking": {
+      "exclude": [
+        "react-native-reanimated-preview-web",
+        "expo-modules-core-preview-web"
+      ]
+    }
+  }
+}
