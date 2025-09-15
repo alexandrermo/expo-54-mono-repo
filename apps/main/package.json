@@ -1,0 +1,47 @@
+{
+  "name": "main",
+  "main": "expo-router/entry",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "expo start",
+    "reset-project": "node ./scripts/reset-project.js",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "lint": "expo lint"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "catalog:expo",
+    "@react-navigation/bottom-tabs": "catalog:ui",
+    "@react-navigation/elements": "catalog:ui",
+    "@react-navigation/native": "catalog:ui",
+    "expo": "catalog:expo",
+    "expo-constants": "catalog:expo",
+    "expo-font": "catalog:expo",
+    "expo-haptics": "catalog:expo",
+    "expo-image": "catalog:expo",
+    "expo-linking": "catalog:expo",
+    "expo-router": "catalog:expo",
+    "expo-splash-screen": "catalog:expo",
+    "expo-status-bar": "catalog:expo",
+    "expo-symbols": "catalog:expo",
+    "expo-system-ui": "catalog:expo",
+    "expo-web-browser": "catalog:expo",
+    "react": "catalog:ui",
+    "react-dom": "catalog:ui",
+    "react-native": "catalog:ui",
+    "react-native-gesture-handler": "catalog:ui",
+    "react-native-worklets": "catalog:ui",
+    "react-native-reanimated": "catalog:ui",
+    "react-native-safe-area-context": "catalog:ui",
+    "react-native-screens": "catalog:ui",
+    "react-native-web": "catalog:ui"
+  },
+  "devDependencies": {
+    "@types/react": "catalog:types",
+    "typescript": "catalog:dev",
+    "eslint": "catalog:dev",
+    "eslint-config-expo": "catalog:dev"
+  },
+  "private": true
+}
