@@ -31,6 +31,7 @@
         "expo-haptics": "~15.0.7",
         "expo-image": "~3.0.8",
         "expo-linking": "~8.0.8",
+        "expo-modules-core-storybok-web": "npm:expo-modules-core@3.0.14",
         "expo-router": "~6.0.4",
         "expo-splash-screen": "~31.0.10",
         "expo-status-bar": "~3.0.8",
@@ -75,5 +76,8 @@
         "react-native-web": "~0.21.0"
       }
     }
+  },
+  "patchedDependencies": {
+    "expo-modules-core@3.0.14": "patches/expo-modules-core@3.0.14.patch"
   }
 }

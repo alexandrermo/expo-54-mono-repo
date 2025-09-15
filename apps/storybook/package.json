@@ -9,6 +9,7 @@
   "dependencies": {
     "expo": "catalog:expo",
     "expo-constants": "catalog:expo",
+    "expo-modules-core-storybok-web": "catalog:expo",
     "expo-status-bar": "catalog:expo",
     "react": "catalog:ui",
     "react-docgen-typescript": "catalog:build",

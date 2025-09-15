@@ -13,6 +13,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-   href: "https://docs.expo.dev/router/introduction"
+   href: "https://docs.expo.dev/router/introduction",
+   children: 'Link'
   },
 };

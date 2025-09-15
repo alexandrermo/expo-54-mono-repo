@@ -1,0 +1,15 @@
+diff --git a/src/ensureNativeModulesAreInstalled.ts b/src/ensureNativeModulesAreInstalled.ts
+index 91415e8eee0fd591c80f6a9f15f031de6abf8336..c5f28ff14e99565de6aae2975693091189bd6a6f 100644
+--- a/src/ensureNativeModulesAreInstalled.ts
++++ b/src/ensureNativeModulesAreInstalled.ts
+@@ -1,4 +1,9 @@
+-import { TurboModuleRegistry } from 'react-native';
++let TurboModuleRegistry: { get: (name: string) => any } = { get: () => null };
++
++// Apenas importa TurboModuleRegistry se não estiver no ambiente web
++if (process.env.EXPO_OS !== 'web') {
++  TurboModuleRegistry = require('react-native').TurboModuleRegistry;
++}
+ 
+ // Installs the expo global on web
+ import './polyfill';
